@@ -39,3 +39,21 @@ async def add_book(payload: BookCreate, db: Session = Depends(get_db)):
         return {"message": "Book added successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+# FastAPI Book Management
+
+This FastAPI application provides endpoints to retrieve all books and delete a book by ID.
+
+## Overview
+
+The application is built with FastAPI, a modern, fast web framework for building APIs with Python. It uses SQLAlchemy for database operations and includes two main routes:
+- `GET /get_all_book`: Retrieve information about all books.
+- `DELETE /delete_book/{book_id}`: Delete a book by ID.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/fastapi-book-management.git
+
