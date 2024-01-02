@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Add Book</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Add Book</h2>
+    <form id="addBookForm">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Author(s):</label>
+        <input type="text" class="form-control" id="author" required>
+      </div>
+      <div class="form-group">
+        <label for="publisher">Publisher:</label>
+        <input type="text" class="form-control" id="publisher" required>
+      </div>
+      <div class="form-group">
+        <label for="publicationDate">Publication Date:</label>
+        <input type="date" class="form-control" id="publicationDate" required>
+      </div>
+      <div class="form-group">
+        <label for="genre">Genre or Category:</label>
+        <input type="text" class="form-control" id="genre" required>
+      </div>
+      <div class="form-group">
+        <label for="coverImage">Book Cover Image URL:</label>
+        <input type="url" class="form-control" id="coverImage" required>
+      </div>
+      <div class="form-group">
+        <label for="synopsis">Synopsis or Summary:</label>
+        <textarea class="form-control" id="synopsis" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="language">Language:</label>
+        <input type="text" class="form-control" id="language" required>
+      </div>
+      <div class="form-group">
+        <label for="reviews">Reviews and Ratings:</label>
+        <input type="text" class="form-control" id="reviews" required>
+      </div>
+      
+      <button type="button" class="btn btn-primary" onclick="addBook()">Add Book</button>
+    </form>
+  </div>
+
+  <script src="fastapi\app\static\javascripts\addBook.js"></script>
+</body>
+</html>

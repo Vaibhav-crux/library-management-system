@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .login-form {
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .book-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center; /* Center content in the card */
+  }
+  
+  .book-card img {
+    max-width: 100%; 
+    height: auto; 
+    width: 2in; 
+    height: 2in; 
+    cursor: pointer;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .add-book-form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
