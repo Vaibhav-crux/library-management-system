@@ -57,3 +57,25 @@ The application is built with FastAPI, a modern, fast web framework for building
    ```bash
    git clone https://github.com/your-username/fastapi-book-management.git
 
+## Changes Made
+
+- Added endpoint to retrieve a specific student by ID.
+- Added endpoint to retrieve a list of students with optional pagination.
+- Added endpoint to delete a student by ID.
+- Added endpoint to update a student by ID.
+
+## Endpoints
+
+- `GET /students/{student_id}`: Retrieve information for a specific student.
+- `GET /students/`: Retrieve a list of students.
+- `DELETE /students/{student_id}`: Delete a student by ID.
+- `PUT /students/{student_id}`: Update a student by ID.
+
+## Usage
+
+1. Run the FastAPI application:
+
+   ```bash
+   uvicorn main:app --reload
+
+
