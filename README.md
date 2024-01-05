@@ -1,23 +1,23 @@
-# library-management-system
+# Library Management System
 
-# Function Documentation: add_book
+## Function Documentation: add_book
 
 This function adds a new book to the database.
 
-## Arguments
+### Arguments
 
 - **payload (BookCreate):** The book data to add.
 - **db (Session):** The database session.
 
-## Returns
+### Returns
 
 - **dict:** A message indicating whether the book was added or not.
 
-## Raises
+### Raises
 
 - **HTTPException:** If there was an error adding the book.
 
-## Usage
+### Usage
 
 ```python
 async def add_book(payload: BookCreate, db: Session = Depends(get_db)):
@@ -40,42 +40,44 @@ async def add_book(payload: BookCreate, db: Session = Depends(get_db)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-# FastAPI Book Management
+```
+
+## FastAPI Book Management
 
 This FastAPI application provides endpoints to retrieve all books and delete a book by ID.
 
-## Overview
+### Overview
 
 The application is built with FastAPI, a modern, fast web framework for building APIs with Python. It uses SQLAlchemy for database operations and includes two main routes:
 - `GET /get_all_book`: Retrieve information about all books.
 - `DELETE /delete_book/{book_id}`: Delete a book by ID.
 
-## Installation
+### Installation
 
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/your-username/fastapi-book-management.git
+   ```
 
-## Changes Made
+### Changes Made
 
 - Added endpoint to retrieve a specific student by ID.
 - Added endpoint to retrieve a list of students with optional pagination.
 - Added endpoint to delete a student by ID.
 - Added endpoint to update a student by ID.
 
-## Endpoints
+### Endpoints
 
 - `GET /students/{student_id}`: Retrieve information for a specific student.
 - `GET /students/`: Retrieve a list of students.
 - `DELETE /students/{student_id}`: Delete a student by ID.
 - `PUT /students/{student_id}`: Update a student by ID.
 
-## Usage
+### Usage
 
 1. Run the FastAPI application:
 
    ```bash
    uvicorn main:app --reload
-
-
+   ```
