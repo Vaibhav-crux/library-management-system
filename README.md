@@ -120,3 +120,8 @@ The application is built with FastAPI, a modern, fast web framework for building
    ```bash
    uvicorn main:app --reload
    ```
+
+
+### Screenshot
+![Library Main Window](https://github.com/user-attachments/assets/f75d711a-1948-4a3e-8d65-19728cb790d4)
+
