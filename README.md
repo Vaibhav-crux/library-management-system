@@ -27,7 +27,7 @@ The Library Management System is a web application developed to streamline the m
 7. **Responsive Design:** Ensures a seamless experience across various devices, including desktops, tablets, and smartphones.
 
 ## How to Run
-1. **Clone the Repository:** `git clone https://github.com/your-username/library_management.git`
+1. **Clone the Repository:** `git clone https://github.com/Vaibhav-crux/library-management-system.git`
 2. **Install Dependencies:** Navigate to the project directory and install dependencies using `pip install -r requirements.txt`.
 3. **Run the Application:** Execute `uvicorn main:app --reload` to start the FastAPI server.
 4. **Access the Application:** Open your web browser and go to `http://localhost:8000` to access the Library Management System.
